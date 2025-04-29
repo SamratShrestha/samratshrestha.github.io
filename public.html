@@ -15,8 +15,13 @@
           logo: "",
           chatBubbleConfig: {"width":"30%","height":"75%","size":"normal"},
           chainlitConfig: {"button":{"imageUrl":"","style":{"bgcolor":"#FF2E4E","color":"#FFFFFF","bgcolorHover":"#FF4764"}}},
-          promptVariables: "p_name=bot&p_role=assistant",
-          humanMessageVariables: "m_user=Samrat"
+          humanMessageVariables: {
+            "m_user": "Samrat"
+          },
+          promptVariables: {
+            "p_name": "bot",
+            "p_role": "assistant"
+          }
       }
   )</script>
 </body>
