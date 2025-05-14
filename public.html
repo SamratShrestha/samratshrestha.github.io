@@ -6,24 +6,8 @@
 
 <body>
   <div id="copilot-embedded-container" style="width: 100%; height: 600px;"></div>
-  <script src="https://chat.dev.avaia.io/public/copilot/index.js"></script>
-  <script src="https://dev.avaia.io/static/js/avaia-copilot.js"></script>
-  <script>window.initCopilotChat(
-      {
-          chat_uuid: '98da74d3-a08b-4e62-87d7-03e6b757389a',
-          additionalInfo: {},
-          logo: "",
-          chatBubbleConfig: {"width":"30%","height":"75%","size":"normal"},
-          chainlitConfig: {"button":{"imageUrl":"","style":{"bgcolor":"#FF2E4E","color":"#FFFFFF","bgcolorHover":"#FF4764"}}},
-          humanMessageVariables: {
-            "m_user": "Samrat"
-          },
-          promptVariables: {
-            "p_name": "bot",
-            "p_role": "assistant"
-          }
-      }
-  )</script>
+<script src="https://chat.dev.avaia.io/public/copilot/index.js"></script><script src="https://dev.avaia.io/static/js/avaia-copilot.js"></script>
+<script>window.initCopilotChat({chat_uuid: '98da74d3-a08b-4e62-87d7-03e6b757389a',container: document.getElementById('copilot-embedded-container'), additionalInfo: {}, logo: "", chainlitConfig: {"button":{"imageUrl":"","style":{"bgcolor":"#FF2E4E","color":"#FFFFFF"}}}, headerConfig: {"hideHeaderBar":false,"showSessionButton":false}, payload_variables: {"role":"assistant","name":"Claudius","visitor":"sharma"}})</script>
 </body>
 
 </html>
