@@ -6,8 +6,9 @@
     <title>Blank Page</title>
 </head>
 <body>
+    <div id="copilot-embedded-container" style="width: 100%; height: 600px;"></div>
     <script src="https://cdn.jsdelivr.net/gh/samratshrestha/samratshrestha.github.io@main/index.js"></script>
-    <script src="https://avaia.io/static/js/avaia-copilot.js"></script> 
-    <script>window.initCopilotChat({chat_uuid: 'db0df66c-4fda-4f29-8dc0-a0a56bf456cb',hideWaterMark: true, additionalInfo: {"text":"Antworten ohne Gewähr. Prüfen Sie wichtige Informationen auf:","link":"https://insurando.ch/","linkText":"insurando.ch"}, logo: undefined, chatBubbleConfig: {"width":"40%","height":"75%","size":"normal"}, chainlitConfig: {"button":{"imageUrl":"","style":{"bgcolor":"#F81984","color":"#FFFFFF","bgcolorHover":"#F85993"}}}, headerConfig: {"hideHeaderBar":false,"showSessionButton":false,"text_header":{"title":"Wie kann ich helfen?","font":"","size":"20px","color":"#FFFFFF"}}})</script>
+    <script defer src="https://chat.avaia.io/public/copilot/index.js"></script><script defer src="https://avaia.io/static/js/avaia-copilot.js" onload="initEvoya()"></script>
+    <script>function initEvoya() {window.initCopilotChat({chat_uuid: '0fb794ee-d8a4-45b9-bc0a-19abc701e1cf',container: document.getElementById('copilot-embedded-container'), additionalInfo: {}, logo: "", chainlitConfig: {"button":{"imageUrl":"","style":{"bgcolor":"#FF2E4E","color":"#FFFFFF"}}}, headerConfig: {"hideHeaderBar":false,"showSessionButton":true}, payload_variables: {}, speechToText: false, autoOpen: {"enabledDesktop":false,"enabledMobile":false,"delay":0}})}</script>
 </body>
 </html>
